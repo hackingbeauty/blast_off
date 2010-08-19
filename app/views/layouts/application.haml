@@ -1,0 +1,12 @@
+!!! 5
+%html 
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    = stylesheet_link_tag "screen.css", "application.css", :media => "screen, projection"
+    = stylesheet_link_tag "print.css", :media => "print"
+    %title
+      
+%body
+  .container
+    = yield
+  = javascript_include_tag "jquery-1.4.2", "application", :cache => true
