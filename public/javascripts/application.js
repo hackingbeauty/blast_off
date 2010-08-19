@@ -1,2 +1,16 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+(function(){
+  
+  if(!window.NAMESPACE) {window.NAMESPACE = {}}	//Create NAMESPACE
+  
+  window.NAMESPACE.Test = {
+    init: function(){
+      alert("Javascript wired in!");
+    }
+  }
+  
+})();
+
+
+$(document).ready (function() {
+	window.NAMESPACE.Test.init();
+});
