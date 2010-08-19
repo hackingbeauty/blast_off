@@ -1,16 +1,9 @@
 (function(){
   
-  if(!window.NAMESPACE) {window.NAMESPACE = {}}	//Create NAMESPACE
-  
-  window.NAMESPACE.Test = {
-    init: function(){
-      alert("Javascript wired in!");
-    }
-  }
+  if(!window.NAMESPACE) {window.NAMESPACE = {}}	// Create NAMESPACE
   
 })();
 
-
 $(document).ready (function() {
-	window.NAMESPACE.Test.init();
+
 });
