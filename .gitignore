@@ -6,6 +6,7 @@ tmp/**/*
 doc/api
 doc/app
 db/schema.rb
+db/*
 *.swp
 coverage
 sms_webservice.log
