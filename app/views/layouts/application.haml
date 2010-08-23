@@ -11,4 +11,6 @@
   .container
     = yield
     = link_to "Sign up now!", signup_path
+    = render 'layouts/footer'
+    = debug(params) if Rails.env.development?
   = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "application", :cache => true
