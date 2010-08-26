@@ -16,6 +16,21 @@ describe UsersController do
       response.should be_success
     end
     
+    it "should have the right title" do
+      get :show, :id => @user
+      response.should have_tag("title", /#{@user.name}/)
+    end
+    
+    it "should include the user's name" do
+      get :show, :id => @user
+      response.should have_tag("h2", /#{@user.name}/)
+    end
+    
+    it "should have a profile image" do
+      get :show, :id => @user
+      response.should have_tag("div", :class => "photo")
+    end
+    
   end
   
   describe "GET 'new'" do
