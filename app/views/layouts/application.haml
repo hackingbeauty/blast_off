@@ -11,7 +11,7 @@
   .container
     #flash
       - flash.each do |key,value|
-        = "#{value}"
+        = content_tag(:div, value, :class => "flash #{key}") 
     = yield
     = link_to "Sign up now!", signup_path
     = render 'layouts/footer'
