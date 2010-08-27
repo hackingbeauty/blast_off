@@ -9,6 +9,9 @@
       
 %body
   .container
+    #flash
+      - flash.each do |key,value|
+        = "#{value}"
     = yield
     = link_to "Sign up now!", signup_path
     = render 'layouts/footer'
