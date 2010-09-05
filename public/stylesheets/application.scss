@@ -1,0 +1,145 @@
+$harvard_red: #AC0000;
+$white: #FFFFFF;
+$frosty_breeze: #C8D3E6;
+$institutional_blue:  #657FAD;
+$logen_deep_blue: #002566;
+
+$warning: #cc3333;
+$success: #33cc33;
+
+@mixin rounded_corners{
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+/* =Main Styles */
+
+body {
+	font-size: 100%;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+.container{
+	margin-top: 20px;
+}
+
+
+/* =Header */
+
+header {
+	position: relative;
+}
+
+header h1 {
+  border:3px solid $harvard_red;
+	padding: 10px 20px 5px;
+  position: absolute;
+  left: -23px;
+	top: 58px;
+	background: $white;
+	font-size: 1.6em;
+	@include rounded_corners;
+	color: $logen_deep_blue;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Times, Arial, Helvetica, sans-serif;
+}
+
+/*	=Logo		*/
+
+#logo {
+  border:5px solid $institutional_blue;
+  float: left;
+	width:280px;
+	height: 160px;
+	@include rounded_corners;
+}
+
+#stripe1,
+#stripe2,
+#stripe3,
+#stripe4,
+#stripe5 {
+	float:left;
+}
+
+#stripe1 {
+	width: 20%;
+	height: 100%;
+	background: $harvard_red;
+}
+
+#stripe2 {
+width: 20%;
+	height: 100%;
+	background: $white;
+}
+
+#stripe3 {
+width: 20%;
+	height: 100%;
+	background: $frosty_breeze;
+}
+
+#stripe4 {
+width: 20%;
+	height: 100%;
+	background: $institutional_blue;
+}
+
+#stripe5 {
+  width: 20%;
+	height: 100%;
+	background: $logen_deep_blue;
+}
+
+/*	=User Styles	*/
+
+.photo{
+	height: 50px;
+	width: 50px;
+	background: url('/images/missing.png') 0 0 no-repeat;
+}
+
+
+/*	=Error Messaging Styles		*/
+
+.fieldWithErrors {
+	padding: 2px;
+	background-color: red;
+	display: table;
+	label {
+		color: #fff;
+	} 
+}
+
+
+#errorExplanation{
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+	h2{
+		text-align: left;
+	  font-weight: bold;
+	  padding: 5px 5px 5px 15px;
+	  font-size: 12px;
+	  margin: -7px;
+	  background-color: #c00;
+	  color: #fff;
+	}
+	p{
+		color: #333;
+	  margin-bottom: 0;
+	  padding: 5px;
+	}
+	ul li{
+		font-size: 12px;
+	  list-style: square;
+	}
+}
+

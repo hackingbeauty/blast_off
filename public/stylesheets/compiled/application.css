@@ -1,0 +1,106 @@
+/* =Main Styles */
+body {
+  font-size: 100%;
+  font-family: Arial,Helvetica,sans-serif; }
+
+.container {
+  margin-top: 20px; }
+
+/* =Header */
+header {
+  position: relative; }
+
+header h1 {
+  border: 3px solid #ac0000;
+  padding: 10px 20px 5px;
+  position: absolute;
+  left: -23px;
+  top: 58px;
+  background: white;
+  font-size: 1.6em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #002566;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Times, Arial, Helvetica, sans-serif; }
+
+/*	=Logo		*/
+#logo {
+  border: 5px solid #657fad;
+  float: left;
+  width: 280px;
+  height: 160px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+#stripe1,
+#stripe2,
+#stripe3,
+#stripe4,
+#stripe5 {
+  float: left; }
+
+#stripe1 {
+  width: 20%;
+  height: 100%;
+  background: #ac0000; }
+
+#stripe2 {
+  width: 20%;
+  height: 100%;
+  background: white; }
+
+#stripe3 {
+  width: 20%;
+  height: 100%;
+  background: #c8d3e6; }
+
+#stripe4 {
+  width: 20%;
+  height: 100%;
+  background: #657fad; }
+
+#stripe5 {
+  width: 20%;
+  height: 100%;
+  background: #002566; }
+
+/*	=User Styles	*/
+.photo {
+  height: 50px;
+  width: 50px;
+  background: url("/images/missing.png") 0 0 no-repeat; }
+
+/*	=Error Messaging Styles		*/
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+  .fieldWithErrors label {
+    color: #fff; }
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff; }
+  #errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px; }
+  #errorExplanation ul li {
+    font-size: 12px;
+    list-style: square; }
